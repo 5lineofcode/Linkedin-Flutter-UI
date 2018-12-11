@@ -13,7 +13,7 @@ Khawatir keseleo juga tuh jari kalo ga sering dilatih ngoding,
 
 So, pagi ini saya challenge diri saya utk bwt UI Linkedin dan harus selesai pagi ini juga,
 Dan ini hasilnya >__<
-Yah ga mirip-mirip banget lah, namanya juga newbie.
+Yah ga mirip-mirip banget lah, namanya juga newbie. :3
 
 Disini saya banyak memainkan row, column, dan expanded.
 Tentunya ada cara yang lebih effesien dari ini,
