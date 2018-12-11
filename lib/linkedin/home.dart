@@ -73,6 +73,7 @@ class _HomeScreenState extends State<HomeScreen> {
           child: Column(
             children: <Widget>[
               Container(
+                color: Colors.white,
                 child: Column(
                   children: <Widget>[
                     Container(
@@ -94,119 +95,177 @@ class _HomeScreenState extends State<HomeScreen> {
                     ),
                     Container(
                       height: 200.0,
+                      padding: EdgeInsets.only(
+                        left: 10.0,
+                        right: 10.0,
+                        bottom: 10.0,
+                      ),
                       child: ListView(
                         scrollDirection: Axis.horizontal,
                         children: <Widget>[
                           Container(
                             width: deviceSize.width - 100,
                             padding: EdgeInsets.all(4.0),
-                            child: Card(
-                              color: Colors.grey,
-                              child: Container(
-                                color: Colors.white,
-                                child: Column(
-                                  children: <Widget>[
-                                    Row(
+                            decoration: new BoxDecoration(
+                                border: new Border.all(
+                              color: Colors.grey[300],
+                            )),
+                            child: Container(
+                              color: Colors.white,
+                              child: Column(
+                                children: <Widget>[
+                                  Container(
+                                    padding: EdgeInsets.all(18.0),
+                                    child: Row(
                                       children: <Widget>[
                                         Image.asset("res/images/icon/news.png"),
                                         Expanded(
-                                          child: Text(
-                                              "Dapatkan berita dan wawasan di feed Anda!"),
+                                          child: Padding(
+                                            padding: const EdgeInsets.all(8.0),
+                                            child: Text(
+                                              "Dapatkan berita dan wawasan di feed Anda!",
+                                              style: TextStyle(
+                                                fontWeight: FontWeight.bold,
+                                                fontSize: 15.0,
+                                              ),
+                                            ),
+                                          ),
                                         ),
                                       ],
                                     ),
-                                    Text(
-                                        "Dapatkan update dari pakar industri. Mulai dengan mengikuti 5 orang yang disukai."),
-                                    Text(
-                                      "Ikuti Profesional Terkemuka",
-                                      style: TextStyle(
-                                        color: Color(0xFF0091CA),
+                                  ),
+                                  Expanded(
+                                    child: Container(
+                                      padding: EdgeInsets.only(
+                                          left: 18.0, right: 18.0),
+                                      child: Text(
+                                        "Dapatkan update dari pakar industri. Mulai dengan mengikuti 5 orang yang disukai.",
+                                        style: TextStyle(
+                                          fontSize: 14.0,
+                                        ),
                                       ),
                                     ),
-                                  ],
-                                ),
+                                  ),
+                                  Expanded(
+                                    child: Container(),
+                                  ),
+                                  Container(
+                                    height: 1.0,
+                                    color: Colors.lightBlue,
+                                  ),
+                                  Container(
+                                    padding: EdgeInsets.all(8.0),
+                                    child: Text(
+                                      "IKUTI PROFESIONAL TERKEMUKA",
+                                      style: TextStyle(
+                                        color: Color(0xFF0091CA),
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
+                                  ),
+                                ],
                               ),
                             ),
                           ),
                           Container(
-                            width: deviceSize.width - 30,
-                            padding: EdgeInsets.all(4.0),
-                            child: Card(
-                              color: Colors.grey,
-                              child: Container(
-                                color: Colors.white,
-                                child: Column(
-                                  children: <Widget>[
-                                    Text("1"),
-                                    Text(
-                                        "Langkah lagi untuk menegaskan profil Anda"),
-                                    Row(
-                                      children: <Widget>[
-                                        Column(
-                                          children: <Widget>[
-                                            Container(
-                                              color: Color(0xFF469a1f),
-                                              height: 10.0,
-                                              width: 80.0,
-                                            ),
-                                            Text(
-                                              "Upload Photo",
-                                              style: TextStyle(fontSize: 12.0),
-                                            ),
-                                          ],
-                                        ),
-                                        Container(
-                                          width: 10.0,
-                                        ),
-                                        Column(
-                                          children: <Widget>[
-                                            Container(
-                                              color: Color(0xFF469a1f),
-                                              height: 10.0,
-                                              width: 80.0,
-                                            ),
-                                            Text(
-                                              "Profile",
-                                              style: TextStyle(fontSize: 12.0),
-                                            ),
-                                          ],
-                                        ),
-                                        Container(
-                                          width: 10.0,
-                                        ),
-                                        Column(
-                                          children: <Widget>[
-                                            Container(
-                                              color: Color(0xFF469a1f),
-                                              height: 10.0,
-                                              width: 80.0,
-                                            ),
-                                            Text(
-                                              "Profile",
-                                              style: TextStyle(fontSize: 12.0),
-                                            ),
-                                          ],
-                                        ),
-                                        Container(
-                                          width: 10.0,
-                                        ),
-                                        Column(
-                                          children: <Widget>[
-                                            Container(
-                                              color: Color(0xFFe1e9ee),
-                                              height: 10.0,
-                                              width: 80.0,
-                                            ),
-                                            Text(
-                                              "Ikuti",
-                                              style: TextStyle(fontSize: 12.0),
-                                            ),
-                                          ],
-                                        ),
-                                      ],
+                            width: 10.0,
+                          ),
+                          Container(
+                            width: deviceSize.width - 25,
+                            child: Container(
+                              padding: EdgeInsets.all(10.0),
+                              decoration: new BoxDecoration(
+                                  border: new Border.all(
+                                color: Colors.grey[300],
+                              )),
+                              child: Column(
+                                children: <Widget>[
+                                  Padding(
+                                    padding: EdgeInsets.all(10.0),
+                                  ),
+                                  Text(
+                                    "1",
+                                    style: TextStyle(
+                                      fontSize: 20.0,
+                                      fontWeight: FontWeight.bold,
                                     ),
-                                  ],
-                                ),
+                                  ),
+                                  Text(
+                                    "Langkah lagi untuk menegaskan profil Anda",
+                                    style: TextStyle(
+                                      fontSize: 15.0,
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                  Padding(
+                                    padding: EdgeInsets.all(18.0),
+                                  ),
+                                  Row(
+                                    children: <Widget>[
+                                      Column(
+                                        children: <Widget>[
+                                          Container(
+                                            color: Color(0xFF469a1f),
+                                            height: 10.0,
+                                            width: 80.0,
+                                          ),
+                                          Text(
+                                            "Upload Photo",
+                                            style: TextStyle(fontSize: 12.0),
+                                          ),
+                                        ],
+                                      ),
+                                      Container(
+                                        width: 10.0,
+                                      ),
+                                      Column(
+                                        children: <Widget>[
+                                          Container(
+                                            color: Color(0xFF469a1f),
+                                            height: 10.0,
+                                            width: 80.0,
+                                          ),
+                                          Text(
+                                            "Profile",
+                                            style: TextStyle(fontSize: 12.0),
+                                          ),
+                                        ],
+                                      ),
+                                      Container(
+                                        width: 10.0,
+                                      ),
+                                      Column(
+                                        children: <Widget>[
+                                          Container(
+                                            color: Color(0xFF469a1f),
+                                            height: 10.0,
+                                            width: 80.0,
+                                          ),
+                                          Text(
+                                            "Profile",
+                                            style: TextStyle(fontSize: 12.0),
+                                          ),
+                                        ],
+                                      ),
+                                      Container(
+                                        width: 10.0,
+                                      ),
+                                      Column(
+                                        children: <Widget>[
+                                          Container(
+                                            color: Color(0xFFe1e9ee),
+                                            height: 10.0,
+                                            width: 80.0,
+                                          ),
+                                          Text(
+                                            "Ikuti",
+                                            style: TextStyle(fontSize: 12.0),
+                                          ),
+                                        ],
+                                      ),
+                                    ],
+                                  ),
+                                ],
                               ),
                             ),
                           ),
@@ -219,7 +278,10 @@ class _HomeScreenState extends State<HomeScreen> {
               Container(
                 height: 60.0,
                 padding: EdgeInsets.only(left: 25.0, right: 25.0),
-                margin: EdgeInsets.only(bottom: 10.0),
+                margin: EdgeInsets.only(
+                  bottom: 10.0,
+                  top: 10.0,
+                ),
                 color: Colors.white,
                 child: Row(
                   children: <Widget>[
@@ -277,29 +339,39 @@ class _HomeScreenState extends State<HomeScreen> {
                         children: <Widget>[
                           Row(
                             children: <Widget>[
-                              CircleAvatar(
-                                backgroundImage:
-                                    AssetImage("res/images/photo/faisal.jpg"),
+                              Container(
+                                padding: EdgeInsets.only(right: 10.0),
+                                child: CircleAvatar(
+                                  backgroundImage:
+                                      AssetImage("res/images/photo/faisal.jpg"),
+                                ),
                               ),
                               Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
                                 children: <Widget>[
-                                  Text(
-                                    "Faisal Ramdan Mulyadi",
-                                    style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      fontSize: 14.0,
+                                  Container(
+                                    padding: EdgeInsets.only(bottom: 5.0),
+                                    child: Text(
+                                      "Faisal Ramdan Mulyadi",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 14.0,
+                                      ),
+                                    ),
+                                  ),
+                                  Container(
+                                    padding: EdgeInsets.only(bottom: 3.0),
+                                    child: Text(
+                                      "Flutter Programmer (Android & iOS)",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 12.0,
+                                        color: Colors.grey,
+                                      ),
                                     ),
                                   ),
                                   Text(
-                                    "Flutter Programmer (Android & iOS)",
-                                    style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      fontSize: 12.0,
-                                      color: Colors.grey,
-                                    ),
-                                  ),
-                                  Text(
-                                    "Provinsi Jawa Barat",
+                                    "1 Jam yang akan datang",
                                     style: TextStyle(
                                       fontWeight: FontWeight.bold,
                                       fontSize: 12.0,
@@ -310,10 +382,17 @@ class _HomeScreenState extends State<HomeScreen> {
                               ),
                             ],
                           ),
+                          Container(
+                            height: 10.0,
+                          ),
                           Text(
                               "Your time is limited, so don't waste it living someone else's life. - Steve Jobs"),
                         ],
                       ),
+                    ),
+                    Container(
+                      height: 1.0,
+                      color: Colors.grey[300],
                     ),
                     Container(
                       height: 50.0,
@@ -367,6 +446,7 @@ class _HomeScreenState extends State<HomeScreen> {
         ),
       ),
       bottomNavigationBar: BottomNavigationBar(
+        type: BottomNavigationBarType.fixed,
         currentIndex: 0, // this will be set when a new tab is tapped
         items: [
           BottomNavigationBarItem(
@@ -374,11 +454,17 @@ class _HomeScreenState extends State<HomeScreen> {
             title: new Text('Home'),
           ),
           BottomNavigationBarItem(
-            icon: new Icon(Icons.mail),
-            title: new Text('Messages'),
+            icon: new Icon(Icons.work),
+            title: new Text('Pekerjaan'),
           ),
           BottomNavigationBarItem(
-              icon: Icon(Icons.person), title: Text('Profile'))
+            icon: new Icon(FontAwesomeIcons.userFriends),
+            title: new Text('Jaringan'),
+          ),
+          BottomNavigationBarItem(
+            icon: new Icon(FontAwesomeIcons.user),
+            title: new Text('Profile'),
+          ),
         ],
       ),
     );
