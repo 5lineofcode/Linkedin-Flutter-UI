@@ -1,7 +1,8 @@
 # Linkedin Flutter UI #
 Education purpose only, content may have copyrighted content
-* Linkedin Logo
-* Linkedin News Icon
+* Logo
+* Icon
+* All Assets on res/images
 
 ![alt text](https://i.imgur.com/gPorpZV.png)
 
